@@ -9,6 +9,8 @@ import Contacts from "./parts/contacts.svelte"
 
 <div id="root">
 	<Title />
+	<Picker />
+	<Gallery />
 </div>
 
 

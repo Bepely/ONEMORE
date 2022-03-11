@@ -27,7 +27,7 @@ import Preview from "../components/preview_gallery.svelte"
     </div>
 
     <div id="contacts_holder" class="text_part part">
-        <h5>+7 (903) 017-92-29 </h5>
+        <h5>+7 (991) 1234-134 </h5>
         <h5>gogin.photo@gmail.com</h5>
     </div>
 </div>
