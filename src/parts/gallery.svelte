@@ -1,18 +1,22 @@
 <script>
     import { preview_store } from "../stores/preview"
 
+    import Picker from "./picker.svelte"
+
 
 
 </script>
 
-<div id="root">        
-    <img id="a" src="./pics/{$preview_store.part}/1.jpg" alt="">
-    <img id="b" src="./pics/{$preview_store.part}/2.jpg" alt="">
-    <img id="c" src="./pics/{$preview_store.part}/3.jpg" alt="">
-    <img id="d" src="./pics/{$preview_store.part}/4.jpg" alt="">
-    <img id="t" src="./pics/visit_card.png" alt="">
-    <img id="e" src="./pics/{$preview_store.part}/5.jpg" alt="">
-    
+<div id="holder"> 
+<Picker />
+    <div id="root">    
+        <img id="a" src="./pics/{$preview_store.part}/1.jpg" alt="">
+        <img id="b" src="./pics/{$preview_store.part}/2.jpg" alt="">
+        <img id="c" src="./pics/{$preview_store.part}/3.jpg" alt="">
+        <img id="d" src="./pics/{$preview_store.part}/4.jpg" alt="">
+        <img id="t" src="./pics/visit_card.png" alt="">
+        <img id="e" src="./pics/{$preview_store.part}/5.jpg" alt="">
+    </div>  
     
 </div>
 

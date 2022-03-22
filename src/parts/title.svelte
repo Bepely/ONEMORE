@@ -1,5 +1,19 @@
 <script>
 import Preview from "../components/preview_gallery.svelte"
+import {preview_store} from "../stores/preview"
+
+const heads = [
+    "Больше просмотров и звонков", 
+    "Привлечение прямых клиентов, а не контрагентов",
+    "Больше доверия собственников",
+    "Привлекательный образ вашего агентства"
+]
+const tails = [
+    "Профессиональные фото выделяют ваше объявление из массы других.",
+    "Контрагенты смотрят на сухие цифры и поиск выгоды. Прямые клиенты ищут предложения с учетом своих эмоций и желаний.",
+    "Профессиональная съемка показывает собственнику вашу компетенцию. Собственники будут понимать “За что вам платить деньги!”.",
+    "Профессиональные фото являются контентом для социальных сетей. У вашего SMM специалиста всегда будет материал для работы. "
+]
 
 </script>
 
@@ -15,11 +29,12 @@ import Preview from "../components/preview_gallery.svelte"
     </div>
 
     <div id="header_holder" class="text_part part">
-        <h1>Фотограф жилой и коммерческой недвижимости в Москве</h1>
+        <h1>Фотограф недвижимости в Москве</h1>
     </div>
 
     <div id="paragraph_holder" class="text_part part">
-        <p>Покупая профессиональные фотографии для ваших объектов недвижимости - вы обгоняете 80% конкурентов.</p>
+            <h4>{heads[$preview_store.title]}</h4>
+            <p>{tails[$preview_store.title]}</p>
     </div>
 
     <div id="preview_holder" class="component_part img_part part"> 
@@ -47,10 +62,12 @@ import Preview from "../components/preview_gallery.svelte"
     grid-area: logo;
     display: grid;
     place-items: center;
-    padding: 5vw;
+    padding: 10px;
+    margin: 10px;
 }
 #header_holder{
     grid-area: header;
+    padding: 10px;
 }
 #paragraph_holder{
     grid-area: paragraph;
@@ -83,11 +100,12 @@ import Preview from "../components/preview_gallery.svelte"
             width: 60vw;
             height: 80vh;
 
-            margin: 10vh 10vw;
+            margin: 10vh 6vw;
         }
 
         #logo{
-            width: 5vw;
+            width: 6vw;
+            padding: 0;
         }
 
         .part{

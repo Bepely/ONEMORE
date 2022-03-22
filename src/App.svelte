@@ -9,10 +9,13 @@ import Contacts from "./parts/contacts.svelte"
 
 <div id="root">
 	<Title />
-	<Picker />
-	<Gallery />
-</div>
 
+	<Gallery />
+
+	<Price />
+	
+
+</div>
 
 
 <style>
@@ -22,5 +25,6 @@ import Contacts from "./parts/contacts.svelte"
 		place-items: center;
 
 		background-color: #DDDDDD;
+		
 	}
 </style>
