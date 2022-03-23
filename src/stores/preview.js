@@ -7,5 +7,15 @@ export let preview_store = writable({
 
     title: 0,
     gallery: 0,
-    info: 0
+    info: 0,
+
+
+
+
+    toShow: [1, 2, 3, 4, 5, "visit card"],
+   shuffle: (array) => {
+  return array.sort(() => Math.random() - 0.5)
+},
+
+
 }) ;

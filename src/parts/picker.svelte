@@ -6,10 +6,10 @@ import Button from "../components/lr.svelte"
 
 
 
-let part = () => {
-    $preview_store.part = parts[$preview_store.gallery]
-    console.log("Part switch", $preview_store);
-}
+
+let show = () => { 
+        $preview_store.toShow = $preview_store.shuffle($preview_store.toShow)
+    };
 
 
 </script>
@@ -18,9 +18,9 @@ let part = () => {
 <div id="root">
         <h4>Галерея</h4>
         <div id="picker_holder">
-            <h3 id="main">{$preview_store.part}</h3>
-            <div id="leftHolder"> <Button side="left" pic={$preview_store.gallery} max={$preview_store.parts.length-1} type="gallery" background="black"/></div>
-            <div id="rightHolder"><Button side="right" pic={$preview_store.gallery} max={$preview_store.parts.length-1} type="gallery" background="black"/></div>
+            <h3 id="main" on:change={show()}>{$preview_store.part}</h3>
+            <div id="leftHolder" > <Button  side="left" pic={$preview_store.gallery} max={$preview_store.parts.length-1} type="gallery" background="black"/></div>
+            <div id="rightHolder" ><Button  side="right" pic={$preview_store.gallery} max={$preview_store.parts.length-1} type="gallery" background="black"/></div>
         </div>
 </div>
 

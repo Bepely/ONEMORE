@@ -7,6 +7,8 @@ export let max
 export let type 
 export let background
 
+let picNums = [1, 2, 3, 4, 5, "visit card"]
+
 let switcher = () =>{
 
     if(type == "title"){
@@ -16,6 +18,13 @@ let switcher = () =>{
     
     $preview_store.gallery = pic;
     $preview_store.part = $preview_store.parts[$preview_store.gallery]
+
+    
+
+
+$preview_store.toShow = $preview_store.shuffle($preview_store.toShow)
+
+    
 }else if(type =="info"){
     
     $preview_store.info = pic

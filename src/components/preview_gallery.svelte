@@ -4,20 +4,7 @@
     import Button from "./lr.svelte"
 
 
-let next = ()=>{
-    if ($preview_store.title >= 3) {
-        $preview_store.title = 0
-    } else{
-        $preview_store.title++
-    }
-}
-let previous = ()=>{
-    if ($preview_store.title <= 0) {
-        $preview_store.title = 3
-    }  else{
-        $preview_store.title--
-    }
-}
+
 
 </script>
 

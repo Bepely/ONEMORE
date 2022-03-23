@@ -4,18 +4,19 @@
     import Picker from "./picker.svelte"
 
 
-
 </script>
 
 <div id="holder"> 
 <Picker />
     <div id="root">    
-        <img id="a" src="./pics/{$preview_store.part}/1.jpg" alt="">
-        <img id="b" src="./pics/{$preview_store.part}/2.jpg" alt="">
-        <img id="c" src="./pics/{$preview_store.part}/3.jpg" alt="">
-        <img id="d" src="./pics/{$preview_store.part}/4.jpg" alt="">
-        <img id="t" src="./pics/visit_card.png" alt="">
-        <img id="e" src="./pics/{$preview_store.part}/5.jpg" alt="">
+        {#each $preview_store.toShow as pic}
+            {#if pic == "visit card"}
+            <img id="t" src="./pics/visit_card.png" alt="">
+            {:else }
+            <img id="a" src="./pics/{$preview_store.part}/{pic}.jpg" alt="">
+            {/if}
+        {/each}
+
     </div>  
     
 </div>
@@ -27,19 +28,19 @@
 
    
 
-    #a{
+    #root:nth-child(1){
         grid-area: a;
     }
-    #b{
+    #root:nth-child(2){
         grid-area: b;
     }
-    #c{
+    #root:nth-child(3){
         grid-area: c;
     }
-    #d{
+    #root:nth-child(4){
         grid-area: d;
     }
-    #e{
+    #root:nth-child(5){
         grid-area: e;
     }
     
@@ -48,21 +49,16 @@
         width: 100%;
     }
 
-    #t{
+    #root:nth-child(6){
         grid-area: t;
     }
 
     @media(min-width: 900px){
         #root{
             width: 80vw;
-            grid-template-areas: "a b b"
-                                 "a b b"
-                                 "c b b"
-                                 "c b b"
-                                 "t d d"
-                                 "t d d"
-                                 "e d d"
-                                 "e d d"
+            grid-template-areas: "a b c"
+                                 "t d e"
+                        
         }
     }
     @media(max-width: 900px){
