@@ -25,7 +25,6 @@ const cardText = [
         <div id="cards_root">
             
             
-                <div id="mainHeader" class="part main text headline"><h2>Стоимость и порядок съемки</h2></div>
                 <div id="nav_root">
                     <Button side="left" pic={$preview_store.info} max={cardHeads.length -1} type="info" />
                     <Button side="right" pic={$preview_store.info} max={cardHeads.length -1} type="info" />
@@ -80,9 +79,7 @@ p{
         grid-area: text;
         width: 80%;
     }
-    #mainHeader{
-        grid-area: title;
-    }
+    
 
     #nav_root{
         display: grid;

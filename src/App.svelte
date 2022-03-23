@@ -13,6 +13,8 @@ import Contacts from "./parts/contacts.svelte"
 	<Gallery />
 
 	<Price />
+
+	<Contacts />
 	
 
 </div>

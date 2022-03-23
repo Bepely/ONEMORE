@@ -51,27 +51,12 @@ let previous = ()=>{
     }
    
 
-    .svg{
-        width: 4vw;
-        height: 5vh;
-        border: 1px solid black;
-        border-radius: 5px;
-        margin: 10px;
-    }
 }
 
 @media(max-width:900px){
 
     img{
         width: 100vw;
-    }
-
-    .svg{
-        width: 20vw;
-        height: 5vh;
-        border: 1px solid black;
-        border-radius: 5px;
-        margin: 10px;
     }
 
 }
