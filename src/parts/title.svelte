@@ -29,7 +29,8 @@ const tails = [
     </div>
 
     <div id="header_holder" class="text_part part">
-        <h1>Фотограф недвижимости в Москве</h1>
+        <h1>Гогин Николай</h1>
+        <h2>Фотограф недвижимости в Москве</h2>
     </div>
 
     <div id="paragraph_holder" class="text_part part">
