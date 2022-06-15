@@ -7,7 +7,6 @@ export let max
 export let type 
 export let background
 
-let picNums = [1, 2, 3, 4, 5, "visit card"]
 
 let switcher = () =>{
 

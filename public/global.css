@@ -4,4 +4,26 @@
 	box-sizing: border-box;
 
 	font-family: 'Overpass', sans-serif;
+
+	
+}
+
+p{
+	font-size: 1.1em;
+}
+
+h1{
+	font-size: 2.2em;
+}
+h2{
+	font-size: 2em;
+}
+h3{
+	font-size: 1.75em;
+}
+h4{
+	font-size: 1.2em;
+}
+h5{
+	font-size: 0.9em;
 }

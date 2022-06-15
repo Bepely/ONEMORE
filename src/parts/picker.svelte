@@ -16,9 +16,9 @@ let show = () => {
 
 
 <div id="root">
-        <h4>Галерея</h4>
+        <h2>Gallery</h2>
         <div id="picker_holder">
-            <h3 id="main" on:change={show()}>{$preview_store.part}</h3>
+            <h4 id="main" on:change={show()}>{$preview_store.part}</h4>
             <div id="leftHolder" > <Button  side="left" pic={$preview_store.gallery} max={$preview_store.parts.length-1} type="gallery" background="black"/></div>
             <div id="rightHolder" ><Button  side="right" pic={$preview_store.gallery} max={$preview_store.parts.length-1} type="gallery" background="black"/></div>
         </div>

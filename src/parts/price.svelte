@@ -3,21 +3,18 @@ import {preview_store} from "../stores/preview"
 
 import Button from "../components/lr.svelte"
 
-const cardHeads = ["Стоимость",
-                   "Назначение съемки", 
-                   "Порядок и способ оплаты", 
-                   "Процесс съемок и обработки",
-                   "Подготовительные рекомендации",
-                   "Дополнительная информация"
+const cardHeads = ["About",
+                   "Why me?", 
+                   "My gear",
+                   "What profits?", 
+                   "Before photoshoot",
 ];
 const cardText = [
-        "Стоимость съемки оставляет 5000₽. Стоимость включает в себя консультацию, выезд на объект, съемка на профессиональное оборудование и обработка отснятого материала. Вы получаете 15 горизонтальных и 5 вертикальных фото на выбор.",
-        "Для консультации, выбора даты и назначения съемки - свяжитесь со мной через Telegram, WhatsApp, email, либо по телефону с 10:00 до 19:00. ",
-        "Оплата состоит из двух этапов. Предоплата 2000₽ вносится при назначении даты съемки и постоплата 3000₽. Оплата принимается банковским переводом. При необходимости - возможно заключение договора подряда. ",
-        "По мере готовности, заказчику демонстрируются все готовые фотографии, сжатые и защищенные водяным знаком. Заказчик выбирает 15 горизонтальных и 5 вертикальных фото, оплачивает работу и получает набор выбранных и оплаченных фотографий.",
-        "Назначив дату съемки, рекомендуется провести минимальный Хоумстейджинг помещения, убрав все личные вещи, фотографии, предметы личной гигиены, одежду,  столовые приборы и т.д..",
-        "В случае повторного выезда по инициативе Заказчика, требуется повторная предоплата. В случае повторного выезда по инициативе Исполнителя, предоплата сохраняется, а из финальной стоимости вычитается размер предоплаты. Предоставленные фотографии являются завершенным продуктом. Внесение правок стоит 1000₽ и выполняются 1 рабочие сутки."
-]
+        "My name is Nikolay Gogin. I am a professional photographer specializing on real estate objects for rent and for sele. I have more than 3 years experience with a real estate photography. My portfolio contents flats, countryhouses, townhouses, offices and commertial premises.",
+        "My experience includes close ties with real estate agencies, so understanding of their needs as well. Working with me secure, fast and profitable. You will get your photos done up to 48 hours since the photoshoot, including your edits in post-production.  ",
+        "Camera: Canon m50 | Lens: Tokina 11-16 mm | SpeedBooster: Viltrox ef-eos M2 0.71x | Tripod: Manfrotto 290xtra | SpeedLight: Canon 580EXII",
+        "Professional photos provide superior advertisment over competitors' non-professional ads. Hiring me - you are getting over 80% competitors on the real estate market. It converts to more views, more calls and more deals closed.",
+        "Recomendations are simple: clean space, daytime photoshoot, absence of personal and religious items. You can reach me via e-mail to schedulee a photoshoot."]
 </script>
 
 

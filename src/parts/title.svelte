@@ -1,19 +1,6 @@
 <script>
 import Preview from "../components/preview_gallery.svelte"
-import {preview_store} from "../stores/preview"
 
-const heads = [
-    "Больше просмотров и звонков", 
-    "Привлечение прямых клиентов, а не контрагентов",
-    "Больше доверия собственников",
-    "Привлекательный образ вашего агентства"
-]
-const tails = [
-    "Профессиональные фото выделяют ваше объявление из массы других.",
-    "Контрагенты смотрят на сухие цифры и поиск выгоды. Прямые клиенты ищут предложения с учетом своих эмоций и желаний.",
-    "Профессиональная съемка показывает собственнику вашу компетенцию. Собственники будут понимать “За что вам платить деньги!”.",
-    "Профессиональные фото являются контентом для социальных сетей. У вашего SMM специалиста всегда будет материал для работы. "
-]
 
 </script>
 
@@ -29,13 +16,13 @@ const tails = [
     </div>
 
     <div id="header_holder" class="text_part part">
-        <h1>Гогин Николай</h1>
-        <h2>Фотограф недвижимости в Москве</h2>
+        <h1>Nikolay Gogin</h1>
+        <h2>Real Estate Photographer</h2>
     </div>
 
     <div id="paragraph_holder" class="text_part part">
-            <h4>{heads[$preview_store.title]}</h4>
-            <p>{tails[$preview_store.title]}</p>
+            <h4>Making your property desirable</h4>
+            <p>Professional photos of your real estate objects makes it more liquid asset.</p>
     </div>
 
     <div id="preview_holder" class="component_part img_part part"> 
@@ -97,7 +84,7 @@ const tails = [
                                  "header preview preview"
                                  "paragraph preview preview"
                                  ". contacts .";
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 3fr 5fr 3fr;
             width: 60vw;
             height: 80vh;
 
