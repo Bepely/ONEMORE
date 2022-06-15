@@ -8,25 +8,6 @@
     let fullScreenZ = -1;
     let fullScreenSRC;
 
-    let photos = [[],[],[],[],[],[]];
-    let photosLoaded = false;
-
-    onMount(async () => {
-        for (let i = 0; i < $preview_store.toShow.length; i++) {
-            let path = `/pics/${$preview_store.parts[i]}`;
-
-            
-                for (let h = 1; h < $preview_store.toShow.length + 1; h++) {
-                    let picPath = path + `/${h}.jpg`;
-                    const res = await fetch(picPath);
-                    photos[i].push( await res.url)
-                }
-            
-        }
-
-        $preview_store.photos = photos;
-        photosLoaded = true;
-    })
 
 
 
@@ -54,13 +35,13 @@
         <div id="fullScreen" on:click={toFullScreen($preview_store.part)} style="z-index: {fullScreenZ}">
             <img src={fullScreenSRC}  alt="Full Screen chosen img">
         </div>
-        {#if photosLoaded}
+        
         {#each $preview_store.toShow as pic}
-        <img  id="a" src={$preview_store.photos[$preview_store.gallery][pic-1]} alt="" on:click={toFullScreen($preview_store.part, pic)}>
+        <img id="a" src="./pics/{$preview_store.part}/{pic}.jpg" alt="" on:click={toFullScreen($preview_store.part, pic)}>
         {/each}
-        {:else}
-        PHOTOS LOADING
-        {/if}
+
+        
+        
         
     </div>  
     
